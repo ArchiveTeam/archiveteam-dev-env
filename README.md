@@ -1,9 +1,9 @@
 archiveteam-dev-env
 ===================
 
-**Work in progress.**
-
 Ubuntu preseed for a [developer environment](http://archiveteam.org/index.php?title=Dev) for ArchiveTeam projects.
+
+Download: *TODO*.
 
 This environment includes:
 
@@ -18,6 +18,7 @@ Creating the virtual machine appliance
 
 You will need:
 
+* Unix-like environment
 * VirtualBox
 * fuseiso
 * An Ubuntu alternative installer ISO: http://releases.ubuntu.com/precise/ubuntu-12.04.3-alternate-i386.iso
@@ -42,4 +43,5 @@ To access the tracker, visit http://localhost:9080/global-admin/. Note that "Liv
 
 The rsync URL is `rsync://localhost:9873/archiveteam/`.
 
+Problems or comments? Please use the GitHub issue tracker. (Or have a chat on #warrior on EFNet.)
 
