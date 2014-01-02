@@ -358,7 +358,7 @@ if [ ! -d "/home/rsync/archiveteam-megawarc-factory/" ]; then
 	sudo -u rsync git clone https://github.com/ArchiveTeam/archiveteam-megawarc-factory.git /home/rsync/archiveteam-megawarc-factory/
 fi
 if [ ! -d "/home/rsync/archiveteam-megawarc-factory/megawarc/" ]; then
-	sudo -u rsync clone https://github.com/alard/megawarc.git /home/rsync/archiveteam-megawarc-factory/megawarc/
+	sudo -u rsync git clone https://github.com/alard/megawarc.git /home/rsync/archiveteam-megawarc-factory/megawarc/
 fi
 
 apt-get clean
