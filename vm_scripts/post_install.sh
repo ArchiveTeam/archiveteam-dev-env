@@ -24,7 +24,7 @@ cd $WORKDIR
 
 # Write info messages
 cat <<'EOM' >/etc/issue
-= ArchiveTeam Developer Environment =
+= ArchiveTeam Developer Environment (\n \l) =
 
 Usernames available: dev, tracker, rsync
 Tracker web interface: http://localhost:9080/global-admin/
