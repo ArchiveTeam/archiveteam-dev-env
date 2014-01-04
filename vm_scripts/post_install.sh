@@ -362,5 +362,6 @@ if [ ! -d "/home/rsync/archiveteam-megawarc-factory/megawarc/" ]; then
 fi
 
 apt-get clean
+rm /tmp/* --force --recursive || :
 
 echo Done
