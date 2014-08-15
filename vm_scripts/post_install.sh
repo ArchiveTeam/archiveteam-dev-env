@@ -328,6 +328,7 @@ EOM
 # Set up rsync
 # Create a place to store rsync uploads
 mkdir -p /home/rsync/uploads/
+chown rsync:rsync /home/rsync/uploads
 cat <<'EOM' >/etc/default/rsync
 RSYNC_ENABLE=true
 RSYNC_OPTS='--port 9873'
