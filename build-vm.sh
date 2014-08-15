@@ -29,7 +29,7 @@ VBoxManage modifyvm $VMNAME \
 	--natpf1 "Tracker Web Interface,tcp,127.0.0.1,9080,,9080" \
 	--natpf1 "Tracker WebSocket,tcp,127.0.0.1,9081,,9081" \
 	--natpf1 "Rsync,tcp,127.0.0.1,9873,,9873" \
-	--natpf1 "SSH,tcp,127.0.0.1,9022,,9022" \
+	--natpf1 "SSH,tcp,127.0.0.1,9022,,22" \
 	--audio none \
 	--usb off \
 	--usbehci off \
