@@ -362,9 +362,6 @@ if [ ! -d "/home/rsync/archiveteam-megawarc-factory/megawarc/" ]; then
 	sudo -u rsync git clone https://github.com/alard/megawarc.git /home/rsync/archiveteam-megawarc-factory/megawarc/
 fi
 
-# Precomile Phusion Passenger
-sudo -i -u tracker /home/tracker/.rvm/gems/ruby-2.1.0/wrappers/passenger-status
-
 apt-get clean
 rm /tmp/* --force --recursive || :
 
