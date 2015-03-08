@@ -3,7 +3,7 @@ archiveteam-dev-env
 
 Ubuntu preseed for a [developer environment](http://archiveteam.org/index.php?title=Dev) for ArchiveTeam projects.
 
-Download: [archiveteam-dev-env-v1-20140913.ova 624M](https://dl.dropboxusercontent.com/u/672132/archiveteam/archiveteam-dev-env-v1-20140913.ova) *This ova file is an beta version. Please help test it.*
+Download: [archiveteam-dev-env-v1-20140913.ova 624M](https://archive.org/details/archiveteam_dev_env_v1_appliances) *This ova file is an beta version. Please help test it.*
 
 This environment includes:
 
