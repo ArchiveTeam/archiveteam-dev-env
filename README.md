@@ -13,21 +13,6 @@ This environment includes:
 
 For the preseed of the Warrior, see [warrior-preseed](https://github.com/ArchiveTeam/warrior-preseed).
 
-Creating the virtual machine appliance
---------------------------------------
-
-You will need:
-
-* Unix-like environment
-* VirtualBox
-* fuseiso
-* An Ubuntu alternative installer ISO: http://releases.ubuntu.com/precise/ubuntu-12.04.3-alternate-i386.iso
-
-1. Run `./build-vm.sh` which creates the virtual machine and its properties.
-2. Start the virtual machine.
-3. Run the installation, answer "Continue", and wait for it to shut down. During "Finishing the installation", "Running preseed" may appear to hang. Pressing Alt+Right or Alt+Left will switch consoles. One of these consoles will show logging output.
-4. Run `./pack-vm.sh` which creates the OVA file.
-
 Logging into the virtual machine
 --------------------------------
 
@@ -43,5 +28,25 @@ To access the tracker, visit http://localhost:9080/global-admin/. Note that "Liv
 
 The rsync URL is `rsync://localhost:9873/archiveteam/`.
 
-Problems or comments? Please use the GitHub issue tracker. (Or have a chat on #warrior on EFNet.)
+Problems or comments? Please use the GitHub issue tracker. (Or have a chat on #archiveteam-dev on hackint.)
 
+Additional Tips for Setup
+-------------------------
+* This version of the tracker doesn't support multi-items, so temporarily remove `multi={}/` from the `GetItemFromTracker` call.
+* Use TRACKER_HOST = 'localhost:9080'
+* For uploads, add `rsync://localhost:9873/archiveteam/<project name>/:downloader/` as a target in the "Uploads" tab of the project admin page. Log in to the VM as `rsync`, `cd` to the uploads folder, and create the `<project name>` folder.
+
+Building the virtual machine appliance
+--------------------------------------
+
+You will need:
+
+* Unix-like environment
+* VirtualBox
+* fuseiso
+* An Ubuntu alternative installer ISO: http://releases.ubuntu.com/precise/ubuntu-12.04.3-alternate-i386.iso
+
+1. Run `./build-vm.sh` which creates the virtual machine and its properties.
+2. Start the virtual machine.
+3. Run the installation, answer "Continue", and wait for it to shut down. During "Finishing the installation", "Running preseed" may appear to hang. Pressing Alt+Right or Alt+Left will switch consoles. One of these consoles will show logging output.
+4. Run `./pack-vm.sh` which creates the OVA file.
